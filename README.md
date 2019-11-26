@@ -1,6 +1,6 @@
 # cfsync - Syncs records to Cloudflare DNS
 
-This is a WIP concept.
+This is a WIP concept for Dynamic DNS using Cloudflare.
 
 Multidomain and multi records are supported but not completly implemented.
 
