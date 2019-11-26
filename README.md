@@ -1,22 +1,20 @@
 # cfsync - Syncs records to Cloudflare DNS
 
-This is a WIP concept. Not ready for production
+This is a WIP concept.
 
-At the moment there is only support for one *A* record.
-Multidomain and multi records support is planned but not yet coded.
+Multidomain and multi records are supported but not completly implemented.
 
-You need to create this environment variables in your system:
+Rename the file `config.example.yml` to `config.yml`
 
-CF_API_KEY
-CF_MAIL
-CF_ZONE_NAME
-CF_A_RECORD
+Example if you want to sync *node.example.com*
 
-Example if you want to sync node.example.com
-
+```yaml
+api_key: YOUR_API_KEY_HERE
+email: mail@example.com
+zones:
+  example.com:
+    - name: node
+      type: A
 ```
-CF_API_KEY   = "YOUR API KEY"
-CF_MAIL      = "mail@example.com"
-CF_ZONE_NAME = "example.com"
-CF_A_RECORD  = "node"
-```
+
+If you want to sync more than one domain and record, check the `config.example.yml` file for inspiration

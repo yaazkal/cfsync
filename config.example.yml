@@ -1,0 +1,11 @@
+api_key: YOUR_API_KEY_HERE
+email: mail@example.com
+zones:
+  example.com:
+    - name: mail
+      type: A
+  example.org:
+    - name: web1
+      type: A
+    - name: web2
+      type: A
